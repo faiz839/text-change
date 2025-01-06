@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="par"> Lorem ipsum dolor sit.</p>
+<button id="bold">bold</button></b>
+<button id="Change">Change Color</button>
+<button id="Reset">Reset</button>
+ <script>
+    let par=document.querySelector("#par");
+    let bold=document.querySelector("#bold");
+    let ChangeColor=document.querySelector("#Change");
+    let Reset =document.querySelector("#Reset");
+
+    bold.addEventListener("click",()=>{
+        par.style.fontWeight="bold";
+    });
+    ChangeColor.addEventListener("click", () =>{
+        par.style.color="blue";
+
+    });
+    Reset.addEventListener("click",()=>{
+        par.style.color="black";
+        par.style.fontWeight="normal";
+
+    });
+</script> 
+</body>
+</html>
